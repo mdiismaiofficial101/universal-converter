@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Universal Converter | CybroTechnology</title>
+<meta name="description" content="Privacy Policy for Universal Converter by CybroTechnology. No personal data collection, no ads, no tracking. Available in English, Bengali, Chinese, Japanese, Korean, Arabic and Spanish.">
+<meta name="author" content="Ismail — CybroTechnology">
+<meta name="theme-color" content="#070b14">
+<meta name="robots" content="index,follow">
+<meta property="og:title" content="Privacy Policy — Universal Converter">
+<meta property="og:description" content="No personal data collection, no ads, no tracking. Read the full privacy policy of Universal Converter in 7 languages.">
+<meta property="og:type" content="website">
+<style>
+  :root{
+    --bg:#070b14;
+    --bg-soft:#0c1322;
+    --card:rgba(255,255,255,.045);
+    --border:rgba(255,255,255,.10);
+    --border-strong:rgba(126,224,230,.30);
+    --text:#eef3fb;
+    --muted:#9fadc6;
+    --accent:#5eead4;
+    --accent-2:#8b5cf6;
+    --radius:22px;
+    --shadow:0 24px 60px rgba(0,0,0,.35);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{
+    margin:0;
+    min-height:100vh;
+    color:var(--text);
+    background:
+      radial-gradient(900px 600px at 10% -10%, rgba(94,234,212,.13), transparent 60%),
+      radial-gradient(800px 500px at 100% 0%, rgba(139,92,246,.15), transparent 55%),
+      radial-gradient(700px 700px at 50% 110%, rgba(56,189,248,.08), transparent 60%),
+      var(--bg);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans","Noto Sans Bengali","Noto Sans Arabic","Noto Sans JP","Noto Sans KR","Noto Sans SC",Arial,sans-serif;
+    font-size:16px;
+    line-height:1.6;
+    text-rendering:optimizeLegibility;
+    -webkit-font-smoothing:antialiased;
+  }
+  ::selection{background:rgba(94,234,212,.28);color:#fff}
+  a{color:var(--accent)}
+  code{
+    font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+    font-size:.86em;
+    color:#c7f9f2;
+    background:rgba(94,234,212,.08);
+    border:1px solid rgba(94,234,212,.14);
+    padding:1px 6px;
+    border-radius:7px;
+    word-break:break-word;
+  }
+  :focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:6px}
+  .skip-link{
+    position:fixed;top:-100px;left:16px;z-index:999;
+    background:var(--accent);color:#04121a;font-weight:700;
+    padding:10px 16px;border-radius:10px;text-decoration:none;
+  }
+  .skip-link:focus{top:12px}
+
+  /* ---------- Sticky header ---------- */
+  .site-header{
+    position:sticky;top:0;z-index:50;
+    background:rgba(7,11,20,.80);
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+    border-bottom:1px solid var(--border);
+  }
+  .header-inner{
+    max-width:1080px;margin:0 auto;padding:14px 20px;
+    display:flex;align-items:center;gap:16px;justify-content:space-between;flex-wrap:wrap;
+  }
+  .brand{display:flex;align-items:center;min-width:0;text-decoration:none;color:inherit}
+  .brand-name{font-weight:800;letter-spacing:-.01em;font-size:1.06rem;line-height:1.1;color:var(--text)}
+  .lang-nav{display:flex;gap:6px;overflow-x:auto;max-width:100%;padding:2px;scrollbar-width:none}
+  .lang-nav::-webkit-scrollbar{display:none}
+  .lang-btn{
+    border:1px solid var(--border);background:rgba(255,255,255,.03);color:var(--muted);
+    padding:7px 12px;border-radius:999px;font:inherit;font-size:.78rem;font-weight:600;
+    cursor:pointer;white-space:nowrap;transition:background .2s,border-color .2s,color .2s;
+  }
+  .lang-btn:hover{border-color:var(--border-strong);color:var(--text)}
+  .lang-btn.active{
+    background:linear-gradient(135deg,rgba(94,234,212,.22),rgba(139,92,246,.22));
+    border-color:rgba(94,234,212,.45);color:#fff;
+    box-shadow:inset 0 0 0 1px rgba(94,234,212,.10);
+  }
+
+  /* ---------- Hero ---------- */
+  .hero{padding:58px 0 30px;text-align:center}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:8px;
+    font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--accent);border:1px solid rgba(94,234,212,.30);
+    background:rgba(94,234,212,.08);padding:7px 14px;border-radius:999px;font-weight:700;
+  }
+  h1{
+    font-size:clamp(2.1rem,5vw,3.5rem);line-height:1.05;letter-spacing:-.03em;
+    margin:18px 0 12px;font-weight:850;
+  }
+  .lede{
+    max-width:720px;margin:0 auto;color:var(--muted);
+    font-size:clamp(1rem,2.2vw,1.14rem);line-height:1.7;
+  }
+  .meta{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:22px}
+  .meta-chip{
+    font-size:.74rem;color:var(--muted);border:1px solid var(--border);
+    background:rgba(255,255,255,.03);padding:6px 11px;border-radius:999px;
+  }
+
+  /* ---------- Policy cards ---------- */
+  .policy{display:none;max-width:900px;margin:0 auto;padding:0 20px 40px}
+  .policy.active{display:block;animation:rise .45s ease both}
+  @keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+  .card{
+    position:relative;
+    background:linear-gradient(145deg,rgba(255,255,255,.06),rgba(255,255,255,.022));
+    border:1px solid var(--border);border-radius:var(--radius);
+    padding:26px 28px;margin-bottom:16px;box-shadow:var(--shadow);
+    transition:border-color .25s,transform .25s;
+  }
+  .card:hover{border-color:rgba(94,234,212,.26);transform:translateY(-2px)}
+  .section-head{display:flex;align-items:center;gap:14px;margin-bottom:12px}
+  .num{
+    flex:0 0 auto;width:36px;height:36px;border-radius:12px;
+    display:grid;place-items:center;font-size:.78rem;font-weight:800;color:#04121a;
+    background:linear-gradient(135deg,var(--accent),#60a5fa);
+    box-shadow:0 8px 18px rgba(94,234,212,.16);
+  }
+  h2{font-size:1.08rem;line-height:1.35;margin:0;letter-spacing:-.01em}
+  .card p{color:var(--muted);font-size:.98rem;line-height:1.8;margin:0}
+  .card p + p{margin-top:10px}
+  .card strong{color:var(--text);font-weight:650}
+  .card ul{margin:10px 0 0;padding-inline-start:18px;color:var(--muted);line-height:1.8}
+  .card li + li{margin-top:4px}
+
+  /* ---------- Contact ---------- */
+  .card.contact{
+    border-color:rgba(94,234,212,.28);
+    background:linear-gradient(145deg,rgba(94,234,212,.09),rgba(139,92,246,.07));
+  }
+  .contact-grid{display:grid;gap:8px;margin-top:14px}
+  .contact-row{display:flex;gap:10px;align-items:baseline;color:var(--muted);font-size:.94rem;flex-wrap:wrap}
+  .contact-row b{color:var(--text);font-weight:650;min-width:110px}
+  .mailto{
+    display:inline-flex;align-items:center;gap:8px;margin-top:16px;
+    background:linear-gradient(135deg,var(--accent),#67e8f9);color:#04121a;
+    text-decoration:none;font-weight:750;padding:12px 18px;border-radius:14px;
+    box-shadow:0 12px 26px rgba(94,234,212,.20);direction:ltr;
+  }
+  .mailto:hover{filter:brightness(1.06)}
+
+  /* ---------- Footer & back-to-top ---------- */
+  .site-footer{
+    border-top:1px solid var(--border);padding:34px 20px 50px;
+    text-align:center;color:var(--muted);font-size:.8rem;line-height:1.7;
+  }
+  .site-footer strong{color:var(--text)}
+  .to-top{
+    position:fixed;inset-inline-end:22px;bottom:22px;width:44px;height:44px;
+    border-radius:50%;border:1px solid rgba(94,234,212,.35);
+    background:rgba(7,11,20,.85);backdrop-filter:blur(10px);color:var(--accent);
+    display:grid;place-items:center;cursor:pointer;
+    opacity:0;visibility:hidden;transform:translateY(10px);
+    transition:opacity .25s,visibility .25s,transform .25s;z-index:60;
+  }
+  .to-top.show{opacity:1;visibility:visible;transform:none}
+
+  /* ---------- RTL tweaks ---------- */
+  [dir="rtl"] .card p,[dir="rtl"] .lede{text-align:start}
+  [dir="rtl"] .contact-row b{min-width:130px}
+  [dir="rtl"] .to-top{transform:translateY(10px)}
+  [dir="rtl"] .to-top.show{transform:none}
+
+  /* ---------- Mobile ---------- */
+  @media (max-width:640px){
+    .header-inner{padding:12px 16px;gap:10px}
+    .lang-nav{order:3;width:100%;padding-bottom:2px}
+    .hero{padding:44px 0 24px}
+    .policy{padding:0 16px 30px}
+    .card{padding:22px 20px;border-radius:18px}
+    .meta{font-size:.72rem}
+  }
+
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    *,*::before,*::after{animation-duration:.001ms !important;transition-duration:.001ms !important}
+  }
+
+  /* ---------- Print ---------- */
+  @media print{
+    body{background:#fff;color:#111}
+    .site-header,.to-top,.site-footer,.skip-link{display:none !important}
+    .policy{display:none !important;padding:0}
+    .policy.active{display:block !important}
+    .hero{padding:0 0 20px;text-align:start}
+    .eyebrow{border-color:#999;color:#333;background:none}
+    .lede,.card p{color:#333}
+    .card{background:#fff;border:1px solid #ddd;box-shadow:none;page-break-inside:avoid;margin-bottom:12px}
+    .card:hover{transform:none}
+    .num{background:#eee;color:#111;box-shadow:none}
+    .mailto{background:#eee;color:#111;box-shadow:none}
+    code{color:#111;background:#f3f3f3;border-color:#ddd}
+  }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#policy-content">Skip to content</a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="#top" aria-label="Universal Converter Privacy Policy">
+      <span class="brand-name">Universal Converter</span>
+    </a>
+    <nav class="lang-nav" aria-label="Choose language">
+      <button class="lang-btn active" type="button" data-lang="en" aria-pressed="true">English</button>
+      <button class="lang-btn" type="button" data-lang="bn" lang="bn" aria-pressed="false">বাংলা</button>
+      <button class="lang-btn" type="button" data-lang="zh" lang="zh-CN" aria-pressed="false">中文</button>
+      <button class="lang-btn" type="button" data-lang="ja" lang="ja" aria-pressed="false">日本語</button>
+      <button class="lang-btn" type="button" data-lang="ko" lang="ko" aria-pressed="false">한국어</button>
+      <button class="lang-btn" type="button" data-lang="ar" lang="ar" aria-pressed="false">العربية</button>
+      <button class="lang-btn" type="button" data-lang="es" lang="es" aria-pressed="false">Español</button>
+    </nav>
+  </div>
+</header>
+
+<main id="policy-content" tabindex="-1">
+
+  <!-- ================= ENGLISH ================= -->
+  <article class="policy active" data-lang="en" lang="en" data-title="Privacy Policy — Universal Converter">
+    <section class="hero">
+      <span class="eyebrow">Legal · Privacy</span>
+      <h1>Privacy Policy</h1>
+      <p class="lede">Your privacy, explained clearly. Universal Converter is built to work without collecting your personal data.</p>
+      <div class="meta">
+        <span class="meta-chip">Effective 18 Nov 2026</span>
+        <span class="meta-chip">Last updated 18 Nov 2026</span>
+        <span class="meta-chip">App version 1.1.0</span>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><span class="num">01</span><h2>Who we are</h2></div>
+      <p>Universal Converter is developed by <strong>Ismail</strong> at <strong>CybroTechnology</strong>. In this policy, “we”, “us” and “our” refer to the developer and company behind the app. This policy explains how the app handles your information. You can contact us at <strong>cybrotechnology1@gmail.com</strong>.</p>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><span class="num">02</span><h2>Information we collect</h2></div>
+      <p>We do not collect, request or store your name, email address, phone number, precise location, contacts, photos, files or any other personally identifiable information. The app does not require an account, sign-in or profile.</p>
+      <p>Exchange rates are provided for informational purposes only and are not financial advice.</p>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><span class="num">03</span><h2>Data stored on your device</h2></div>
+      <p>Your preferences live only on your device: theme, favourite and selected currencies, target-rate alerts, the last conversion category, notification settings and the first-run consent state. This data is never uploaded to us.</p>
+      <p>Clearing the app's data or uninstalling the app removes this information from your device.</p>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><span class="num">04</span><h2>Network requests and third-party services</h2></div>
+      <p>To show live exchange rates, the app sends requests containing currency codes to the <strong>Frankfurter API</strong> (<code>api.frankfurter.dev</code>) and, as a backup, the <strong>Open Exchange Rates API</strong> (<code>open.er-api.com</code>). These requests do not include personal information or an account identifier.</p>
+      <p>Like most internet services, those providers may receive technical data such as your IP address and process it under their own privacy policies. We do not control those services.</p>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><span class="num">05</span><h2>Notifications and permissions</h2></div>
+      <p>With your permission (Android 13 and later), the app can send local notifications about significant exchange-rate movements and your target rates. Notifications are generated on your device. You can disable them in the app or in system settings at any time.</p>
+      <p>Permissions used: Internet, network state and notifications. The app does <strong>not</strong> use location, camera, microphone, contacts, SMS, call logs or storage permissions.</p>
+      <p>Background rate syncing is handled by Android WorkManager, which may declare system-level permissions such as wake lock and run-after-reboot. These only keep the scheduled sync reliable and never access personal data.</p>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><span class="num">06</span><h2>Ads, analytics and tracking</h2></div>
+      <p>The app contains no advertising SDK, no advertising tracking and no third-party analytics. We do not build advertising profiles, track you across apps or websites, or sell data.</p>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><span class="num">07</span><h2>Sharing and disclosure</h2></div>
+      <p>We do not sell, rent, trade or share your personal information. Because we do not collect it, there is no server-side profile to disclose. We may disclose information only if required by applicable law; the app itself holds no personal data to disclose.</p>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><span class="num">08</span><h2>Security and retention</h2></div>
+      <p>Your settings stay in the app's private storage on your device, protected by Android's app sandbox. We retain no personal data on our servers. Locally stored data remains until you clear the app's data or uninstall the app.</p>
+      <p>Note: if you have enabled Android's system backup, your device may include app preferences in a backup managed by Google or your device manufacturer. That backup is outside our control.</p>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><span class="num">09</span><h2>Children's privacy</h2></div>
+      <p>The app is not directed to children under 13 (or the minimum age required in your country). We do not knowingly collect personal information from children. Since the app does not collect personal data, no such data is stored by us.</p>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><span class="num">10</span><h2>Your choices and data deletion</h2></div>
+      <p>You can view or change your preferences in Settings. To delete all locally stored data, use <strong>Settings → Apps → Universal Converter → Storage → Clear data</strong>, or uninstall the app.</p>
+      <p>For privacy questions or deletion requests, contact <strong>cybrotechnology1@gmail.com</strong>. Because we hold no server-side personal data, there is usually nothing for us to delete.</p>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><span class="num">11</span><h2>Changes to this policy</h2></div>
+      <p>We may update this policy to reflect new features or legal requirements. The “Last updated” date will change, and material updates will be highlighted in the app. Continued use after an update means you accept the revised policy.</p>
+    </section>
+
+    <section class="card contact">
+      <div class="section-head"><span class="num">12</span><h2>Contact</h2></div>
+      <div class="contact-grid">
+        <div class="contact-row"><b>Company</b><span>CybroTechnology</span></div>
+        <div class="contact-row"><b>Developer</b><span>Ismail</span></div>
+        <div class="contact-row"><b>App</b><span>Universal Converter</span></div>
+        <div class="contact-row"><b>Email</b><span dir="ltr">cybrotechnology1@gmail.com</span></div>
+      </div>
+      <a class="mailto" href="mailto:cybrotechnology1@gmail.com">✉ Email CybroTechnology</a>
+    </section>
+  </article>
+
+  <!-- ================= BENGALI ================= -->
+  <article class="policy" data-lang="bn" lang="bn" data-title="প্রাইভেসি পলিসি — Universal Converter">
+    <section class="hero">
+      <span class="eyebrow">আইনগত · গোপনীয়তা</span>
+      <h1>প্রাইভেসি পলিসি</h1>
+      <p class="lede">আপনার গোপনীয়তা, সহজ ভাষায়। Universal Converter আপনার ব্যক্তিগত তথ্য সংগ্রহ না করেই কাজ করার জন্য তৈরি।</p>
+      <div class="meta">
+        <span class="meta-chip">কার্যকর: ১৮ নভেম্বর ২০২৬</span>
+        <span class="meta-chip">সর্বশেষ আপডেট: ১৮ নভেম্বর ২০২৬</span>
+        <span class="meta-chip">অ্যাপ সংস্করণ ১.১.০</span>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><span class="num">০১</span><h2>আমরা কারা</h2></div>
+      <p>Universal Converter তৈরি করেছে <strong>Ismail</strong>, <strong>CybroTechnology</strong>-এর পক্ষ থেকে। এই পলিসিতে “আমরা” বলতে অ্যাপের ডেভেলপার ও কোম্পানিকে বোঝায়। এই পলিসি ব্যাখ্যা করে অ্যাপটি আপনার তথ্য কীভাবে পরিচালনা করে। যোগাযোগ: <strong>cybrotechnology1@gmail.com</strong>।</p>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><span class="num">০২</span><h2>আমরা কী তথ্য সংগ্রহ করি</h2></div>
+      <p>আমরা আপনার নাম, ইমেইল, ফোন নম্বর, সঠিক অবস্থান, পরিচিতি, ছবি, ফাইল বা অন্য কোনো ব্যক্তিগতভাবে শনাক্তযোগ্য তথ্য সংগ্রহ, অনুরোধ বা সংরক্ষণ করি না। অ্যাপটিতে অ্যাকাউন্ট, সাইন-ইন বা প্রোফাইল প্রয়োজন নেই।</p>
+      <p>বিনিময় হার শুধু তথ্যের জন্য দেওয়া হয়, এটি আর্থিক পরামর্শ নয়।</p>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><span class="num">০৩</span><h2>আপনার ডিভাইসে সংরক্ষিত তথ্য</h2></div>
+      <p>আপনার পছন্দগুলো শুধু আপনার ডিভাইসে থাকে: থিম, প্রিয় ও নির্বাচিত কারেন্সি, টার্গেট-রেট অ্যালার্ট, সর্বশেষ ক্যাটাগরি, নোটিফিকেশন সেটিংস এবং প্রথম-রান সম্মতির অবস্থা। এই তথ্য কখনো আমাদের কাছে আপলোড হয় না।</p>
+      <p>অ্যাপের ডেটা মুছে ফেলা বা অ্যাপ আনইনস্টল করলে এই তথ্য আপনার ডিভাইস থেকে মুছে যায়।</p>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><span class="num">০৪</span><h2>নেটওয়ার্ক অনুরোধ ও তৃতীয় পক্ষের সেবা</h2></div>
+      <p>লাইভ বিনিময় হার দেখাতে অ্যাপটি কারেন্সি কোডসহ অনুরোধ পাঠায় <strong>Frankfurter API</strong> (<code>api.frankfurter.dev</code>)-তে এবং ব্যাকআপ হিসেবে <strong>Open Exchange Rates API</strong> (<code>open.er-api.com</code>)-তে। এসব অনুরোধে কোনো ব্যক্তিগত তথ্য বা অ্যাকাউন্ট আইডি থাকে না।</p>
+      <p>ইন্টারনেট সেবার মতো এসব প্রদানকারী আপনার IP ঠিকানার মতো প্রযুক্তিগত তথ্য পেতে পারে এবং নিজেদের প্রাইভেসি পলিসি অনুযায়ী তা প্রক্রিয়া করতে পারে। এসব সেবা আমাদের নিয়ন্ত্রণে নয়।</p>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><span class="num">০৫</span><h2>নোটিফিকেশন ও পারমিশন</h2></div>
+      <p>আপনার অনুমতি নিয়ে (Android 13 ও তার পরের সংস্করণ) অ্যাপটি উল্লেখযোগ্য রেট পরিবর্তন ও আপনার টার্গেট রেট সম্পর্কে লোকাল নোটিফিকেশন পাঠাতে পারে। নোটিফিকেশন আপনার ডিভাইসেই তৈরি হয়। আপনি অ্যাপ বা সিস্টেম সেটিংসে যেকোনো সময় বন্ধ করতে পারেন।</p>
+      <p>ব্যবহৃত পারমিশন: ইন্টারনেট, নেটওয়ার্ক স্টেট ও নোটিফিকেশন। অ্যাপটি লোকেশন, ক্যামেরা, মাইক্রোফোন, পরিচিতি, SMS, কল লগ বা স্টোরেজ পারমিশন <strong>ব্যবহার করে না</strong>।</p>
+      <p>ব্যাকগ্রাউন্ড রেট সিঙ্ক Android WorkManager পরিচালনা করে, যা wake lock ও রিবুটের পর চালানোর মতো সিস্টেম-লেভেল পারমিশন ঘোষণা করতে পারে। এগুলো শুধু নির্ধারিত সিঙ্ক নির্ভরযোগ্য রাখে এবং কোনো ব্যক্তিগত তথ্যে প্রবেশ করে না।</p>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><span class="num">০৬</span><h2>বিজ্ঞাপন, অ্যানালিটিক্স ও ট্র্যাকিং</h2></div>
+      <p>অ্যাপে কোনো বিজ্ঞাপন SDK, বিজ্ঞাপন ট্র্যাকিং বা তৃতীয় পক্ষের অ্যানালিটিক্স নেই। আমরা বিজ্ঞাপন প্রোফাইল তৈরি করি না, অ্যাপ বা ওয়েবসাইট জুড়ে ট্র্যাক করি না এবং ডেটা বিক্রি করি না।</p>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><span class="num">০৭</span><h2>শেয়ারিং ও প্রকাশ</h2></div>
+      <p>আমরা আপনার ব্যক্তিগত তথ্য বিক্রি, ভাড়া, বিনিময় বা শেয়ার করি না। যেহেতু আমরা তা সংগ্রহ করি না, সার্ভারে প্রকাশ করার মতো কোনো প্রোফাইল নেই। আইনগত বাধ্যবাধকতা থাকলে তথ্য প্রকাশ করা হতে পারে; তবে অ্যাপ নিজে কোনো ব্যক্তিগত তথ্য ধারণ করে না।</p>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><span class="num">০৮</span><h2>নিরাপত্তা ও সংরক্ষণ</h2></div>
+      <p>আপনার সেটিংস ডিভাইসের অ্যাপ-প্রাইভেট স্টোরেজে Android-এর অ্যাপ স্যান্ডবক্স দ্বারা সুরক্ষিত থাকে। আমাদের সার্ভারে কোনো ব্যক্তিগত তথ্য সংরক্ষিত থাকে না। লোকাল ডেটা আপনি অ্যাপ ডেটা মুছলে বা আনইনস্টল করলে মুছে যায়।</p>
+      <p>দ্রষ্টব্য: Android সিস্টেম ব্যাকআপ চালু থাকলে Google বা ডিভাইস প্রস্তুতকারকের পরিচালিত ব্যাকআপে অ্যাপ-পছন্দ যুক্ত হতে পারে; সেই ব্যাকআপ আমাদের নিয়ন্ত্রণের বাইরে।</p>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><span class="num">০৯</span><h2>শিশুদের গোপনীয়তা</h2></div>
+      <p>অ্যাপটি ১৩ বছরের কম বয়সী শিশুদের (বা আপনার দেশে প্রযোজ্য ন্যূনতম বয়স) জন্য নয়। আমরা শিশুদের কাছ থেকে জেনেশুনে ব্যক্তিগত তথ্য সংগ্রহ করি না। যেহেতু অ্যাপ ব্যক্তিগত তথ্য সংগ্রহ করে না, আমাদের কাছে এমন তথ্য সংরক্ষিত হয় না।</p>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><span class="num">১০</span><h2>আপনার পছন্দ ও ডেটা মুছে ফেলা</h2></div>
+      <p>Settings-এ আপনার পছন্দ দেখতে বা বদলাতে পারেন। সব লোকাল ডেটা মুছতে <strong>Settings → Apps → Universal Converter → Storage → Clear data</strong> ব্যবহার করুন অথবা অ্যাপ আনইনস্টল করুন।</p>
+      <p>গোপনীয়তা সংক্রান্ত প্রশ্ন বা ডেটা মুছতে <strong>cybrotechnology1@gmail.com</strong>-এ যোগাযোগ করুন। আমাদের সার্ভারে ব্যক্তিগত তথ্য না থাকায় সাধারণত মুছতে কিছু থাকে না।</p>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><span class="num">১১</span><h2>এই পলিসির পরিবর্তন</h2></div>
+      <p>নতুন ফিচার বা আইনি প্রয়োজনে আমরা পলিসি আপডেট করতে পারি। “সর্বশেষ আপডেট” তারিখ বদলাবে এবং গুরুত্বপূর্ণ পরিবর্তন অ্যাপে দেখানো হবে। আপডেটের পর অ্যাপ ব্যবহার চালিয়ে গেলে আপনি সংশোধিত পলিসি মেনে নিচ্ছেন।</p>
+    </section>
+
+    <section class="card contact">
+      <div class="section-head"><span class="num">১২</span><h2>যোগাযোগ</h2></div>
+      <div class="contact-grid">
+        <div class="contact-row"><b>কোম্পানি</b><span>CybroTechnology</span></div>
+        <div class="contact-row"><b>ডেভেলপার</b><span>Ismail</span></div>
+        <div class="contact-row"><b>অ্যাপ</b><span>Universal Converter</span></div>
+        <div class="contact-row"><b>ইমেইল</b><span dir="ltr">cybrotechnology1@gmail.com</span></div>
+      </div>
+      <a class="mailto" href="mailto:cybrotechnology1@gmail.com">✉ CybroTechnology-কে ইমেইল করুন</a>
+    </section>
+  </article>
+
+  <!-- ================= CHINESE (SIMPLIFIED) ================= -->
+  <article class="policy" data-lang="zh" lang="zh-CN" data-title="隐私政策 — Universal Converter">
+    <section class="hero">
+      <span class="eyebrow">法律 · 隐私</span>
+      <h1>隐私政策</h1>
+      <p class="lede">清晰说明你的隐私。Universal Converter 在不收集个人数据的前提下为你服务。</p>
+      <div class="meta">
+        <span class="meta-chip">生效日期：2026年11月18日</span>
+        <span class="meta-chip">最后更新：2026年11月18日</span>
+        <span class="meta-chip">应用版本 1.1.0</span>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><span class="num">01</span><h2>我们是谁</h2></div>
+      <p>Universal Converter 由 <strong>CybroTechnology</strong> 的 <strong>Ismail</strong> 开发。本政策中的“我们”指本应用的开发者和公司。本政策说明应用如何处理你的信息。联系方式：<strong>cybrotechnology1@gmail.com</strong>。</p>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><span class="num">02</span><h2>我们收集的信息</h2></div>
+      <p>我们不收集、不请求、不存储你的姓名、电子邮件、电话号码、精确位置、联系人、照片、文件或任何其他可识别个人身份的信息。本应用无需账户、登录或个人资料。</p>
+      <p>汇率仅供参考，不构成财务建议。</p>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><span class="num">03</span><h2>存储在设备上的数据</h2></div>
+      <p>你的偏好仅保存在设备上：主题、收藏和选中的货币、目标汇率提醒、上次使用的换算类别、通知设置以及首次使用同意状态。这些数据绝不会上传给我们。</p>
+      <p>清除应用数据或卸载应用即可从设备中删除这些信息。</p>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><span class="num">04</span><h2>网络请求与第三方服务</h2></div>
+      <p>为显示实时汇率，应用会向 <strong>Frankfurter API</strong>（<code>api.frankfurter.dev</code>）发送包含货币代码的请求，并以防万一使用 <strong>Open Exchange Rates API</strong>（<code>open.er-api.com</code>）作为备用。这些请求不包含个人信息或账户标识。</p>
+      <p>与大多数互联网服务一样，这些提供商可能会收到你的 IP 地址等技术数据，并按其自身的隐私政策处理。我们无法控制这些服务。</p>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><span class="num">05</span><h2>通知与权限</h2></div>
+      <p>经你允许（Android 13 及以上），应用可发送关于显著汇率变动和目标汇率的本地通知。通知在你的设备上生成。你可以随时在应用或系统设置中关闭。</p>
+      <p>使用的权限：互联网、网络状态和通知。应用<strong>不</strong>使用位置、相机、麦克风、联系人、短信、通话记录或存储权限。</p>
+      <p>后台汇率同步由 Android WorkManager 处理，它可能会声明唤醒锁和开机后运行等系统级权限。这些权限仅用于确保定时同步可靠，绝不会访问个人数据。</p>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><span class="num">06</span><h2>广告、分析与跟踪</h2></div>
+      <p>应用不包含广告 SDK、广告跟踪或第三方分析。我们不建立广告画像，不跨应用或网站跟踪你，也不出售数据。</p>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><span class="num">07</span><h2>共享与披露</h2></div>
+      <p>我们不会出售、出租、交易或共享你的个人信息。由于我们不收集这些信息，服务器上也没有可披露的个人资料。仅在法律要求时我们才可能披露信息；应用本身不持有任何个人数据。</p>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><span class="num">08</span><h2>安全与保留</h2></div>
+      <p>你的设置保存在设备上由 Android 应用沙盒保护的私有存储中。我们的服务器不保留任何个人数据。本地数据会一直保留，直到你清除应用数据或卸载应用。</p>
+      <p>注意：如果你启用了 Android 系统备份，你的设备可能会将应用偏好包含在由 Google 或设备制造商管理的备份中。该备份不在我们的控制范围内。</p>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><span class="num">09</span><h2>儿童隐私</h2></div>
+      <p>本应用不面向 13 岁以下儿童（或你所在国家/地区规定的最低年龄）。我们不会有意收集儿童的个人信息。由于应用不收集个人数据，我们也不会存储此类数据。</p>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><span class="num">10</span><h2>你的选择与数据删除</h2></div>
+      <p>你可以在“设置”中查看或更改偏好。要删除所有本地数据，请使用 <strong>设置 → 应用 → Universal Converter → 存储 → 清除数据</strong>，或卸载应用。</p>
+      <p>如有隐私问题或删除请求，请联系 <strong>cybrotechnology1@gmail.com</strong>。由于我们不持有服务器端个人数据，通常无需我们删除任何内容。</p>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><span class="num">11</span><h2>本政策的变更</h2></div>
+      <p>我们可能会更新本政策以反映新功能或法律要求。“最后更新”日期将随之更改，重要更新会在应用中提示。更新后继续使用即表示你接受修订后的政策。</p>
+    </section>
+
+    <section class="card contact">
+      <div class="section-head"><span class="num">12</span><h2>联系我们</h2></div>
+      <div class="contact-grid">
+        <div class="contact-row"><b>公司</b><span>CybroTechnology</span></div>
+        <div class="contact-row"><b>开发者</b><span>Ismail</span></div>
+        <div class="contact-row"><b>应用</b><span>Universal Converter</span></div>
+        <div class="contact-row"><b>电子邮件</b><span dir="ltr">cybrotechnology1@gmail.com</span></div>
+      </div>
+      <a class="mailto" href="mailto:cybrotechnology1@gmail.com">✉ 给 CybroTechnology 发邮件</a>
+    </section>
+  </article>
+
+  <!-- ================= JAPANESE ================= -->
+  <article class="policy" data-lang="ja" lang="ja" data-title="プライバシーポリシー — Universal Converter">
+    <section class="hero">
+      <span class="eyebrow">法的情報 · プライバシー</span>
+      <h1>プライバシーポリシー</h1>
+      <p class="lede">あなたのプライバシーをわかりやすく。Universal Converter は個人データを収集せずに動作するよう設計されています。</p>
+      <div class="meta">
+        <span class="meta-chip">施行日：2026年11月18日</span>
+        <span class="meta-chip">最終更新：2026年11月18日</span>
+        <span class="meta-chip">アプリ版 1.1.0</span>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><span class="num">01</span><h2>私たちについて</h2></div>
+      <p>Universal Converter は、<strong>CybroTechnology</strong> の <strong>Ismail</strong> によって開発されています。本ポリシーにおける「私たち」とは、本アプリの開発者および会社を指します。本ポリシーは、アプリがあなたの情報をどのように扱うかを説明します。連絡先：<strong>cybrotechnology1@gmail.com</strong>。</p>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><span class="num">02</span><h2>収集する情報</h2></div>
+      <p>氏名、メールアドレス、電話番号、正確な位置情報、連絡先、写真、ファイル、その他個人を特定できる情報を収集・要求・保存することはありません。アカウント、サインイン、プロフィールは不要です。</p>
+      <p>為替レートは情報提供のみを目的としており、金融アドバイスではありません。</p>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><span class="num">03</span><h2>端末に保存されるデータ</h2></div>
+      <p>設定は端末内にのみ保存されます：テーマ、お気に入りと選択中の通貨、目標レートのアラート、最後に使用したカテゴリ、通知設定、初回同意の状態。これらのデータが私たちに送信されることはありません。</p>
+      <p>アプリのデータを消去するかアンインストールすると、これらの情報は端末から削除されます。</p>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><span class="num">04</span><h2>ネットワーク通信と第三者サービス</h2></div>
+      <p>リアルタイムの為替レートを表示するため、アプリは通貨コードを含むリクエストを <strong>Frankfurter API</strong>（<code>api.frankfurter.dev</code>）に送信し、予備として <strong>Open Exchange Rates API</strong>（<code>open.er-api.com</code>）を使用します。これらのリクエストに個人情報やアカウント識別子は含まれません。</p>
+      <p>一般的なインターネットサービスと同様に、これらの提供者は IP アドレスなどの技術データを受け取り、各社のプライバシーポリシーに従って処理する場合があります。当社はこれらのサービスを管理していません。</p>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><span class="num">05</span><h2>通知と権限</h2></div>
+      <p>あなたの許可（Android 13 以降）に基づき、アプリは重要な為替変動や目標レートに関するローカル通知を送信できます。通知は端末上で生成されます。アプリまたはシステム設定でいつでも無効にできます。</p>
+      <p>使用する権限：インターネット、ネットワーク状態、通知。位置情報、カメラ、マイク、連絡先、SMS、通話履歴、ストレージの権限は<strong>使用しません</strong>。</p>
+      <p>バックグラウンドのレート同期は Android WorkManager が処理し、ウェイクロックや再起動後の実行などのシステム権限を宣言する場合があります。これらは定期同期の信頼性のためだけに使用され、個人データにアクセスすることはありません。</p>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><span class="num">06</span><h2>広告・分析・トラッキング</h2></div>
+      <p>アプリには広告 SDK、広告トラッキング、第三者の分析ツールはありません。広告プロファイルを作成したり、アプリやウェブサイトをまたいで追跡したり、データを販売したりすることはありません。</p>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><span class="num">07</span><h2>共有と開示</h2></div>
+      <p>個人情報を販売、貸与、交換、共有することはありません。収集していないため、開示できるサーバー上のプロファイルもありません。法令上必要な場合にのみ情報を開示することがありますが、アプリ自体は個人データを保持していません。</p>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><span class="num">08</span><h2>セキュリティと保持</h2></div>
+      <p>設定は Android のアプリサンドボックスで保護された端末内のプライベートストレージに保存されます。当社のサーバーには個人データを保持しません。ローカルデータは、アプリのデータを消去するかアンインストールするまで保持されます。</p>
+      <p>注意：Android のシステムバックアップを有効にしている場合、Google または端末メーカーが管理するバックアップにアプリの設定が含まれることがあります。そのバックアップは当社の管理外です。</p>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><span class="num">09</span><h2>子どものプライバシー</h2></div>
+      <p>本アプリは 13 歳未満（またはお住まいの国の最低年齢）の子どもを対象としていません。子どもから故意に個人情報を収集することはありません。アプリは個人データを収集しないため、当社がそのようなデータを保存することもありません。</p>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><span class="num">10</span><h2>あなたの選択とデータ削除</h2></div>
+      <p>設定で希望を確認・変更できます。すべてのローカルデータを削除するには、<strong>設定 → アプリ → Universal Converter → ストレージ → データを消去</strong>、またはアプリをアンインストールしてください。</p>
+      <p>プライバシーに関する質問や削除の依頼は <strong>cybrotechnology1@gmail.com</strong> まで。サーバー側に個人データを保持していないため、通常は当社が削除するものはありません。</p>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><span class="num">11</span><h2>本ポリシーの変更</h2></div>
+      <p>新機能や法的要件に応じて本ポリシーを更新することがあります。「最終更新」日が変更され、重要な更新はアプリ内で通知されます。更新後もアプリを使用し続けることで、改定されたポリシーに同意したものとみなされます。</p>
+    </section>
+
+    <section class="card contact">
+      <div class="section-head"><span class="num">12</span><h2>お問い合わせ</h2></div>
+      <div class="contact-grid">
+        <div class="contact-row"><b>会社</b><span>CybroTechnology</span></div>
+        <div class="contact-row"><b>開発者</b><span>Ismail</span></div>
+        <div class="contact-row"><b>アプリ</b><span>Universal Converter</span></div>
+        <div class="contact-row"><b>メール</b><span dir="ltr">cybrotechnology1@gmail.com</span></div>
+      </div>
+      <a class="mailto" href="mailto:cybrotechnology1@gmail.com">✉ CybroTechnology にメール</a>
+    </section>
+  </article>
+
+  <!-- ================= KOREAN ================= -->
+  <article class="policy" data-lang="ko" lang="ko" data-title="개인정보 처리방침 — Universal Converter">
+    <section class="hero">
+      <span class="eyebrow">법적 정보 · 개인정보</span>
+      <h1>개인정보 처리방침</h1>
+      <p class="lede">개인정보 보호를 알기 쉽게 설명합니다. Universal Converter는 개인 데이터를 수집하지 않고 작동하도록 설계되었습니다.</p>
+      <div class="meta">
+        <span class="meta-chip">시행일: 2026년 11월 18일</span>
+        <span class="meta-chip">최종 업데이트: 2026년 11월 18일</span>
+        <span class="meta-chip">앱 버전 1.1.0</span>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><span class="num">01</span><h2>소개</h2></div>
+      <p>Universal Converter는 <strong>CybroTechnology</strong>의 <strong>Ismail</strong>이 개발했습니다. 본 정책에서 "당사"는 앱의 개발자와 회사를 의미합니다. 본 정책은 앱이 사용자의 정보를 어떻게 처리하는지 설명합니다. 문의: <strong>cybrotechnology1@gmail.com</strong>.</p>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><span class="num">02</span><h2>수집하는 정보</h2></div>
+      <p>이름, 이메일 주소, 전화번호, 정확한 위치, 연락처, 사진, 파일 또는 기타 개인 식별 정보를 수집, 요청 또는 저장하지 않습니다. 계정, 로그인 또는 프로필이 필요하지 않습니다.</p>
+      <p>환율은 정보 제공 목적이며 재정적 조언이 아닙니다.</p>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><span class="num">03</span><h2>기기에 저장되는 데이터</h2></div>
+      <p>테마, 즐겨찾기 및 선택한 통화, 목표 환율 알림, 마지막 변환 카테고리, 알림 설정, 최초 동의 상태 등 설정은 기기에만 저장됩니다. 이 데이터는 절대 당사에 업로드되지 않습니다.</p>
+      <p>앱 데이터를 지우거나 앱을 삭제하면 이 정보가 기기에서 제거됩니다.</p>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><span class="num">04</span><h2>네트워크 요청 및 제3자 서비스</h2></div>
+      <p>실시간 환율을 표시하기 위해 앱은 통화 코드가 포함된 요청을 <strong>Frankfurter API</strong>(<code>api.frankfurter.dev</code>)에 보내고, 예비로 <strong>Open Exchange Rates API</strong>(<code>open.er-api.com</code>)를 사용합니다. 이러한 요청에는 개인정보나 계정 식별자가 포함되지 않습니다.</p>
+      <p>대부분의 인터넷 서비스와 마찬가지로 해당 제공업체는 IP 주소와 같은 기술 데이터를 수신할 수 있으며 자체 개인정보 처리방침에 따라 처리할 수 있습니다. 당사는 이러한 서비스를 통제하지 않습니다.</p>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><span class="num">05</span><h2>알림 및 권한</h2></div>
+      <p>사용자의 허용(Android 13 이상)에 따라 앱은 중요한 환율 변동 및 목표 환율에 대한 로컬 알림을 보낼 수 있습니다. 알림은 기기에서 생성됩니다. 앱 또는 시스템 설정에서 언제든지 끌 수 있습니다.</p>
+      <p>사용 권한: 인터넷, 네트워크 상태, 알림. 위치, 카메라, 마이크, 연락처, SMS, 통화 기록, 저장소 권한은 <strong>사용하지 않습니다</strong>.</p>
+      <p>백그라운드 환율 동기화는 Android WorkManager가 처리하며, 절전 모드 해제(wake lock) 및 재부팅 후 실행과 같은 시스템 수준 권한을 선언할 수 있습니다. 이러한 권한은 예약 동기화의 신뢰성을 유지하기 위한 것일 뿐 개인 데이터에 접근하지 않습니다.</p>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><span class="num">06</span><h2>광고, 분석 및 추적</h2></div>
+      <p>앱에는 광고 SDK, 광고 추적 또는 제3자 분석이 없습니다. 광고 프로필을 만들거나 앱과 웹사이트를 넘나들며 추적하거나 데이터를 판매하지 않습니다.</p>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><span class="num">07</span><h2>공유 및 공개</h2></div>
+      <p>개인정보를 판매, 임대, 거래 또는 공유하지 않습니다. 수집하지 않기 때문에 서버에 공개할 프로필도 없습니다. 법률상 필요한 경우에만 정보를 공개할 수 있으며, 앱 자체는 개인 데이터를 보유하지 않습니다.</p>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><span class="num">08</span><h2>보안 및 보존</h2></div>
+      <p>설정은 Android 앱 샌드박스로 보호되는 기기의 비공개 저장소에 보관됩니다. 당사 서버에는 개인 데이터를 보관하지 않습니다. 로컬 데이터는 앱 데이터를 지우거나 앱을 삭제할 때까지 유지됩니다.</p>
+      <p>참고: Android 시스템 백업을 활성화한 경우 Google 또는 기기 제조업체가 관리하는 백업에 앱 설정이 포함될 수 있으며, 해당 백업은 당사의 통제 범위를 벗어납니다.</p>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><span class="num">09</span><h2>아동의 개인정보</h2></div>
+      <p>본 앱은 만 13세 미만(또는 해당 국가의 최소 연령) 아동을 대상으로 하지 않습니다. 아동의 개인정보를 고의로 수집하지 않습니다. 앱이 개인 데이터를 수집하지 않으므로 당사가 그러한 데이터를 저장하지도 않습니다.</p>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><span class="num">10</span><h2>선택 및 데이터 삭제</h2></div>
+      <p>설정에서 환경설정을 확인하거나 변경할 수 있습니다. 모든 로컬 데이터를 삭제하려면 <strong>설정 → 앱 → Universal Converter → 저장공간 → 데이터 지우기</strong>를 사용하거나 앱을 삭제하세요.</p>
+      <p>개인정보 관련 질문이나 삭제 요청은 <strong>cybrotechnology1@gmail.com</strong>으로 연락하세요. 서버에 개인 데이터가 없으므로 일반적으로 당사가 삭제할 항목은 없습니다.</p>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><span class="num">11</span><h2>정책 변경</h2></div>
+      <p>새로운 기능이나 법적 요구사항을 반영하여 본 정책을 업데이트할 수 있습니다. "최종 업데이트" 날짜가 변경되며 중요한 변경 사항은 앱에서 안내됩니다. 업데이트 후 계속 사용하면 개정된 정책에 동의한 것으로 간주됩니다.</p>
+    </section>
+
+    <section class="card contact">
+      <div class="section-head"><span class="num">12</span><h2>문의</h2></div>
+      <div class="contact-grid">
+        <div class="contact-row"><b>회사</b><span>CybroTechnology</span></div>
+        <div class="contact-row"><b>개발자</b><span>Ismail</span></div>
+        <div class="contact-row"><b>앱</b><span>Universal Converter</span></div>
+        <div class="contact-row"><b>이메일</b><span dir="ltr">cybrotechnology1@gmail.com</span></div>
+      </div>
+      <a class="mailto" href="mailto:cybrotechnology1@gmail.com">✉ CybroTechnology에 이메일</a>
+    </section>
+  </article>
+
+  <!-- ================= ARABIC ================= -->
+  <article class="policy" data-lang="ar" lang="ar" dir="rtl" data-title="سياسة الخصوصية — Universal Converter">
+    <section class="hero">
+      <span class="eyebrow">قانوني · الخصوصية</span>
+      <h1>سياسة الخصوصية</h1>
+      <p class="lede">خصوصيتك، موضحة بوضوح. صُمم Universal Converter ليعمل دون جمع بياناتك الشخصية.</p>
+      <div class="meta">
+        <span class="meta-chip">تاريخ السريان: 18 نوفمبر 2026</span>
+        <span class="meta-chip">آخر تحديث: 18 نوفمبر 2026</span>
+        <span class="meta-chip">إصدار التطبيق 1.1.0</span>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><span class="num">01</span><h2>من نحن</h2></div>
+      <p>تم تطوير Universal Converter بواسطة <strong>Ismail</strong> في <strong>CybroTechnology</strong>. في هذه السياسة، تشير كلمات "نحن" و"لنا" إلى مطوّر التطبيق والشركة المالكة له. توضح هذه السياسة كيفية تعامل التطبيق مع معلوماتك. يمكنك التواصل معنا على <strong>cybrotechnology1@gmail.com</strong>.</p>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><span class="num">02</span><h2>المعلومات التي نجمعها</h2></div>
+      <p>لا نجمع أو نطلب أو نخزّن اسمك أو بريدك الإلكتروني أو رقم هاتفك أو موقعك الدقيق أو جهات الاتصال أو الصور أو الملفات أو أي معلومات أخرى تحدد هويتك الشخصية. لا يحتاج التطبيق إلى حساب أو تسجيل دخول أو ملف تعريف.</p>
+      <p>أسعار الصرف لأغراض المعلومات فقط وليست نصيحة مالية.</p>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><span class="num">03</span><h2>البيانات المخزنة على جهازك</h2></div>
+      <p>تُحفظ تفضيلاتك على جهازك فقط: السمة، والعملات المفضلة والمحددة، وتنبيهات أسعار العملات المستهدفة، وآخر فئة تحويل، وإعدادات الإشعارات، وحالة الموافقة الأولى. لا تُرفع هذه البيانات إلينا أبدًا.</p>
+      <p>يؤدي مسح بيانات التطبيق أو إلغاء تثبيته إلى حذف هذه المعلومات من جهازك.</p>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><span class="num">04</span><h2>طلبات الشبكة والخدمات الخارجية</h2></div>
+      <p>لعرض أسعار الصرف المباشرة، يرسل التطبيق طلبات تحتوي على رموز العملات إلى <strong>Frankfurter API</strong> (<code>api.frankfurter.dev</code>)، ويستخدم <strong>Open Exchange Rates API</strong> (<code>open.er-api.com</code>) كخيار احتياطي. لا تتضمن هذه الطلبات أي معلومات شخصية أو معرّف حساب.</p>
+      <p>وكمعظم خدمات الإنترنت، قد يتلقى مزوّدو الخدمة بيانات تقنية مثل عنوان IP ويعالجونها وفق سياسات الخصوصية الخاصة بهم. نحن لا نتحكم في هذه الخدمات.</p>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><span class="num">05</span><h2>الإشعارات والأذونات</h2></div>
+      <p>بإذنك (Android 13 أو أحدث)، يمكن للتطبيق إرسال إشعارات محلية عن تغيّرات أسعار الصرف المهمة وأسعارك المستهدفة. تُنشأ الإشعارات على جهازك. يمكنك تعطيلها من التطبيق أو من إعدادات النظام في أي وقت.</p>
+      <p>الأذونات المستخدمة: الإنترنت، وحالة الشبكة، والإشعارات. لا يستخدم التطبيق أذونات الموقع أو الكاميرا أو الميكروفون أو جهات الاتصال أو الرسائل النصية أو سجل المكالمات أو التخزين.</p>
+      <p>تتم مزامنة الأسعار في الخلفية بواسطة Android WorkManager، وقد يعلن عن أذونات على مستوى النظام مثل قفل التنبيه والتشغيل بعد إعادة التشغيل. وهذه الأذونات تُستخدم فقط لضمان موثوقية المزامنة المجدولة ولا تصل أبدًا إلى البيانات الشخصية.</p>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><span class="num">06</span><h2>الإعلانات والتحليلات والتتبع</h2></div>
+      <p>لا يحتوي التطبيق على أي SDK إعلاني أو تتبع إعلاني أو تحليلات من جهات خارجية. لا ننشئ ملفات تعريف إعلانية، ولا نتتبعك عبر التطبيقات أو المواقع، ولا نبيع البيانات.</p>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><span class="num">07</span><h2>المشاركة والإفصاح</h2></div>
+      <p>لا نبيع معلوماتك الشخصية أو نؤجرها أو نتاجر بها أو نشاركها. ولأننا لا نجمعها، فلا يوجد ملف تعريف على الخادم يمكن الإفصاح عنه. قد نكشف عن معلومات فقط إذا كان القانون المعمول به يفرض ذلك؛ والتطبيق نفسه لا يحتفظ بأي بيانات شخصية.</p>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><span class="num">08</span><h2>الأمان والاحتفاظ</h2></div>
+      <p>تُحفظ إعداداتك في التخزين الخاص للتطبيق على جهازك، المحمي بواسطة بيئة عزل التطبيقات في Android. لا نحتفظ بأي بيانات شخصية على خوادمنا. تبقى البيانات المحلية حتى تمسح بيانات التطبيق أو تلغي تثبيته.</p>
+      <p>ملاحظة: إذا كنت قد فعّلت النسخ الاحتياطي لنظام Android، فقد يتضمن جهازك تفضيلات التطبيق في نسخة احتياطية تديرها Google أو الشركة المصنعة لجهازك. وهذه النسخة خارج سيطرتنا.</p>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><span class="num">09</span><h2>خصوصية الأطفال</h2></div>
+      <p>التطبيق غير موجّه للأطفال دون سن 13 عامًا (أو الحد الأدنى للعمر المعمول به في بلدك). لا نجمع عن قصد معلومات شخصية من الأطفال. وبما أن التطبيق لا يجمع بيانات شخصية، فإننا لا نخزّن أيًا منها.</p>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><span class="num">10</span><h2>خياراتك وحذف البيانات</h2></div>
+      <p>يمكنك عرض تفضيلاتك أو تغييرها من الإعدادات. لحذف جميع البيانات المحلية، استخدم <strong>الإعدادات → التطبيقات → Universal Converter → التخزين → مسح البيانات</strong>، أو قم بإلغاء تثبيت التطبيق.</p>
+      <p>لأسئلة الخصوصية أو طلبات الحذف، تواصل مع <strong>cybrotechnology1@gmail.com</strong>. وبما أننا لا نحتفظ ببيانات شخصية على الخادم، فعادةً لا يوجد ما نحذفه.</p>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><span class="num">11</span><h2>تغييرات هذه السياسة</h2></div>
+      <p>قد نحدّث هذه السياسة لتعكس ميزات جديدة أو متطلبات قانونية. سيتغير تاريخ "آخر تحديث"، وستُبرز التحديثات المهمة في التطبيق. استمرارك في استخدام التطبيق بعد التحديث يعني موافقتك على السياسة المعدلة.</p>
+    </section>
+
+    <section class="card contact">
+      <div class="section-head"><span class="num">12</span><h2>التواصل</h2></div>
+      <div class="contact-grid">
+        <div class="contact-row"><b>الشركة</b><span>CybroTechnology</span></div>
+        <div class="contact-row"><b>المطوّر</b><span>Ismail</span></div>
+        <div class="contact-row"><b>التطبيق</b><span>Universal Converter</span></div>
+        <div class="contact-row"><b>البريد الإلكتروني</b><span dir="ltr">cybrotechnology1@gmail.com</span></div>
+      </div>
+      <a class="mailto" href="mailto:cybrotechnology1@gmail.com">✉ راسل CybroTechnology</a>
+    </section>
+  </article>
+
+  <!-- ================= SPANISH ================= -->
+  <article class="policy" data-lang="es" lang="es" data-title="Política de privacidad — Universal Converter">
+    <section class="hero">
+      <span class="eyebrow">Legal · Privacidad</span>
+      <h1>Política de privacidad</h1>
+      <p class="lede">Tu privacidad, explicada con claridad. Universal Converter está diseñado para funcionar sin recopilar tus datos personales.</p>
+      <div class="meta">
+        <span class="meta-chip">Vigente: 18 nov 2026</span>
+        <span class="meta-chip">Última actualización: 18 nov 2026</span>
+        <span class="meta-chip">Versión 1.1.0</span>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><span class="num">01</span><h2>Quiénes somos</h2></div>
+      <p>Universal Converter es desarrollado por <strong>Ismail</strong> en <strong>CybroTechnology</strong>. En esta política, "nosotros" se refiere al desarrollador y la empresa detrás de la aplicación. Esta política explica cómo la aplicación trata tu información. Puedes contactarnos en <strong>cybrotechnology1@gmail.com</strong>.</p>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><span class="num">02</span><h2>Información que recopilamos</h2></div>
+      <p>No recopilamos, solicitamos ni almacenamos tu nombre, correo electrónico, número de teléfono, ubicación precisa, contactos, fotos, archivos ni cualquier otra información de identificación personal. La aplicación no requiere cuenta, inicio de sesión ni perfil.</p>
+      <p>Los tipos de cambio son solo informativos y no constituyen asesoramiento financiero.</p>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><span class="num">03</span><h2>Datos almacenados en tu dispositivo</h2></div>
+      <p>Tus preferencias se guardan solo en tu dispositivo: tema, monedas favoritas y seleccionadas, alertas de tipo de cambio objetivo, última categoría de conversión, ajustes de notificaciones y estado del consentimiento inicial. Estos datos nunca se envían a nosotros.</p>
+      <p>Borrar los datos de la aplicación o desinstalarla elimina esta información de tu dispositivo.</p>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><span class="num">04</span><h2>Solicitudes de red y servicios de terceros</h2></div>
+      <p>Para mostrar tipos de cambio en vivo, la aplicación envía solicitudes con códigos de moneda a <strong>Frankfurter API</strong> (<code>api.frankfurter.dev</code>) y, como respaldo, a <strong>Open Exchange Rates API</strong> (<code>open.er-api.com</code>). Estas solicitudes no incluyen información personal ni identificadores de cuenta.</p>
+      <p>Como la mayoría de los servicios de Internet, esos proveedores pueden recibir datos técnicos como tu dirección IP y tratarlos según sus propias políticas de privacidad. No controlamos esos servicios.</p>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><span class="num">05</span><h2>Notificaciones y permisos</h2></div>
+      <p>Con tu permiso (Android 13 o superior), la aplicación puede enviar notificaciones locales sobre cambios significativos en los tipos de cambio y tus tasas objetivo. Las notificaciones se generan en tu dispositivo. Puedes desactivarlas en la aplicación o en los ajustes del sistema en cualquier momento.</p>
+      <p>Permisos utilizados: Internet, estado de la red y notificaciones. La aplicación <strong>no</strong> usa ubicación, cámara, micrófono, contactos, SMS, registro de llamadas ni almacenamiento.</p>
+      <p>La sincronización de tipos de cambio en segundo plano la gestiona Android WorkManager, que puede declarar permisos de sistema como el bloqueo de activación (wake lock) y la ejecución tras reiniciar. Estos permisos solo mantienen fiable la sincronización programada y nunca acceden a datos personales.</p>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><span class="num">06</span><h2>Anuncios, analítica y seguimiento</h2></div>
+      <p>La aplicación no contiene SDK de publicidad, seguimiento publicitario ni analítica de terceros. No creamos perfiles publicitarios, no te rastreamos entre aplicaciones o sitios web ni vendemos datos.</p>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><span class="num">07</span><h2>Uso compartido y divulgación</h2></div>
+      <p>No vendemos, alquilamos, intercambiamos ni compartimos tu información personal. Como no la recopilamos, no existe un perfil en servidores que podamos divulgar. Solo podríamos divulgar información si la ley aplicable lo exige; la aplicación en sí no contiene datos personales.</p>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><span class="num">08</span><h2>Seguridad y conservación</h2></div>
+      <p>Tus ajustes permanecen en el almacenamiento privado de la aplicación en tu dispositivo, protegido por el entorno aislado de Android. No conservamos datos personales en nuestros servidores. Los datos locales permanecen hasta que borres los datos de la aplicación o la desinstales.</p>
+      <p>Nota: si has activado la copia de seguridad del sistema Android, tu dispositivo podría incluir las preferencias de la aplicación en una copia gestionada por Google o el fabricante. Esa copia está fuera de nuestro control.</p>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><span class="num">09</span><h2>Privacidad de los menores</h2></div>
+      <p>La aplicación no está dirigida a menores de 13 años (o la edad mínima exigida en tu país). No recopilamos a sabiendas información personal de menores. Dado que la aplicación no recopila datos personales, no almacenamos dichos datos.</p>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><span class="num">10</span><h2>Tus opciones y eliminación de datos</h2></div>
+      <p>Puedes consultar o cambiar tus preferencias en Ajustes. Para eliminar todos los datos locales, usa <strong>Ajustes → Aplicaciones → Universal Converter → Almacenamiento → Borrar datos</strong>, o desinstala la aplicación.</p>
+      <p>Para preguntas de privacidad o solicitudes de eliminación, contacta con <strong>cybrotechnology1@gmail.com</strong>. Como no conservamos datos personales en servidores, normalmente no hay nada que debamos eliminar.</p>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><span class="num">11</span><h2>Cambios en esta política</h2></div>
+      <p>Podemos actualizar esta política para reflejar nuevas funciones o requisitos legales. La fecha de "Última actualización" cambiará y las actualizaciones importantes se destacarán en la aplicación. Seguir usando la aplicación tras una actualización implica que aceptas la política revisada.</p>
+    </section>
+
+    <section class="card contact">
+      <div class="section-head"><span class="num">12</span><h2>Contacto</h2></div>
+      <div class="contact-grid">
+        <div class="contact-row"><b>Empresa</b><span>CybroTechnology</span></div>
+        <div class="contact-row"><b>Desarrollador</b><span>Ismail</span></div>
+        <div class="contact-row"><b>Aplicación</b><span>Universal Converter</span></div>
+        <div class="contact-row"><b>Correo</b><span dir="ltr">cybrotechnology1@gmail.com</span></div>
+      </div>
+      <a class="mailto" href="mailto:cybrotechnology1@gmail.com">✉ Escribir a CybroTechnology</a>
+    </section>
+  </article>
+
+</main>
+
+<footer class="site-footer">
+  <strong>Universal Converter</strong> · © 2026 CybroTechnology · Built by Ismail
+</footer>
+
+<button class="to-top" type="button" aria-label="Back to top">↑</button>
+
+<script>
+(function () {
+  var STORAGE_KEY = 'uc_privacy_lang';
+  var SUPPORTED = ['en', 'bn', 'zh', 'ja', 'ko', 'ar', 'es'];
+  var buttons = Array.prototype.slice.call(document.querySelectorAll('.lang-btn'));
+  var articles = Array.prototype.slice.call(document.querySelectorAll('.policy'));
+  var toTop = document.querySelector('.to-top');
+
+  function apply(lang, updateUrl) {
+    if (SUPPORTED.indexOf(lang) === -1) lang = 'en';
+
+    document.documentElement.lang = lang;
+    document.documentElement.dir = (lang === 'ar') ? 'rtl' : 'ltr';
+
+    articles.forEach(function (article) {
+      var active = article.getAttribute('data-lang') === lang;
+      article.classList.toggle('active', active);
+      if (active && article.getAttribute('data-title')) {
+        document.title = article.getAttribute('data-title');
+      }
+    });
+
+    buttons.forEach(function (button) {
+      var active = button.getAttribute('data-lang') === lang;
+      button.classList.toggle('active', active);
+      button.setAttribute('aria-pressed', active ? 'true' : 'false');
+    });
+
+    try { localStorage.setItem(STORAGE_KEY, lang); } catch (e) {}
+
+    if (updateUrl) {
+      try {
+        var url = new URL(window.location.href);
+        url.searchParams.set('lang', lang);
+        history.replaceState(null, '', url.toString());
+      } catch (e) {}
+    }
+  }
+
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      apply(button.getAttribute('data-lang'), true);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  });
+
+  var saved = null;
+  try { saved = localStorage.getItem(STORAGE_KEY); } catch (e) {}
+
+  var queryLang = null;
+  try {
+    queryLang = new URLSearchParams(window.location.search).get('lang');
+  } catch (e) {}
+
+  var preferred = (navigator.languages && navigator.languages[0]) || navigator.language || 'en';
+  var base = String(preferred).toLowerCase().split('-')[0];
+  var detected = SUPPORTED.indexOf(base) !== -1 ? base : 'en';
+
+  apply(queryLang || saved || detected, false);
+
+  if (toTop) {
+    window.addEventListener('scroll', function () {
+      toTop.classList.toggle('show', window.scrollY > 600);
+    }, { passive: true });
+    toTop.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+})();
+</script>
+</body>
+</html>
